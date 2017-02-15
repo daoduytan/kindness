@@ -1,0 +1,209 @@
+@media (min-width: 992px)
+    .header 
+        &_main-wrap 
+            display: table
+            width: 100%
+
+            .logo, .header-right
+                display: table-cell
+                vertical-align: middle
+                height: 80px
+                
+            .logo
+                max-width: 150px
+                padding: 0 50px 0 0
+
+        .search 
+            background: #fff
+            width: 0
+            opacity: 0
+            visibility: hidden
+            margin: auto
+            -webkit-transition: opacity .1s, width .3s
+            -moz-transition: opacity .1s, width .3s
+            transition: opacity .1s, width .3s
+
+            form 
+                margin-top: 25px
+
+                button, input
+                    border: none
+                    background: none
+                
+                input 
+                    box-shadow: none
+
+            &.showSearch 
+                width: 100%
+                opacity: 1
+                visibility: visible
+@media (min-width: 992px) 
+    .header
+        .search
+            +position(absolute, 0 0 0 0)
+
+@media (min-width: 992px) and (max-width: 1199px)
+
+    .nav 
+        .header-icon
+            margin-left: 15px
+
+        .menu
+            ul 
+
+                li 
+                    margin: 0 5px
+
+@media (max-width: 1199px) 
+    .home_blog-item .caption 
+        padding: 15px 20px
+
+@media (max-width: 991px)
+    .gray 
+        +position(fixed, 0 0 0 0)
+        background: rgba(0,0,0,.3)
+        z-index: 100
+        display: none
+
+    .btn-nav 
+        +position(absolute, 50% 0 null null)
+        +size(28px 20px)
+        margin-top: -10px
+
+        &:after, &:before 
+            content: "" 
+
+        span, &:after, &:before  
+            display: block 
+            +size(100% 2px)
+            background: $color1
+            position: absolute
+            left: 0
+        span 
+            top: 9px
+        &:before  
+            top: 0
+        &:after 
+            bottom: 0
+        
+
+    .header 
+        &_main-wrap 
+            .logo
+                padding: 15px 0
+                max-width: 150px
+               
+        .header-right 
+            text-align: center
+            position: fixed 
+            z-index: 99999
+            top: 0 
+            right: 0
+            bottom: 0
+            background: #fff
+            width: 90% 
+            max-width: 360px
+            height: 100% 
+            transition: all .4s ease-in-out
+            // opacity: 0  
+            visibility: hidden 
+            transform: translateX(100%)
+            will-change: transform
+
+    .openNav 
+        overflow: hidden
+        .gray 
+            display: block
+        .header 
+            .header-right 
+                // opacity: 1
+                visibility: visible 
+                transform: translateX(0%)
+    .nav 
+        position: relative 
+        overflow-x: hidden 
+        overflow-y: auto 
+        height: 100% 
+        .menu
+            display: block
+            margin-top: 20px
+            ul li 
+                display: block
+                margin: 0 15px
+                
+            
+            a 
+                display: block
+                width: 100%
+                padding: 10px 0
+
+    
+        .header-icon
+            border-bottom: 1px solid #ddd 
+            border-top: 1px solid #ddd 
+            display: block
+            margin: 20px 0
+            padding: 5px 0
+            ul 
+                text-align: center
+                li  
+                    a 
+                        font-size: 25px
+    .search 
+        background: #fff
+        padding: 10px 0
+        border-bottom: 1px solid #ddd
+
+        button, input
+            background: transparent
+            border:none 
+            box-shadow: none
+    
+
+            &:focus 
+                outline: none
+                box-shadow: none
+
+    .action-sm
+        ul 
+            li 
+                a 
+                    font:
+                        size: 12px
+                        weight: 700
+                    text-transform: uppercase
+        
+
+    .close-menu 
+        text-transform: uppercase
+        font:
+            size: 12px
+            weight: 700
+        padding: 10px 15px
+        text-align: right
+        background: $color1
+        color: #fff
+
+        i 
+            margin-left: 10px
+
+
+    .galery-wrap .galery-item, .blog-post
+        width: 33.33%
+
+         
+
+            
+
+@media (max-width: 600px)
+    .galery-wrap .galery-item, .blog-post
+        width: 50%
+
+@media (max-width: 360px)
+    .galery-wrap .galery-item, .blog-post
+        width:  100%
+
+
+    
+
+    

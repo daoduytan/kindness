@@ -1,0 +1,121 @@
+.footer
+    font:
+        size: 13px
+    line-height: 1.8
+
+    &_logo 
+        img 
+            display: block
+            max-width: 200px
+            margin: 0 0 25px
+    &_title 
+        margin: 15px 0 20px
+        padding-bottom: 25px
+        border-bottom: 2px solid #eee
+        h3
+            margin: 0
+            font:
+                size: 14px
+                weight: 700
+            text-transform: uppercase
+
+
+    &_top 
+        padding: 70px 0
+        border-top: 1px solid #ddd
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0) 10%)
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.08) 0%,rgba(0,0,0,0) 10%)
+        background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%,rgba(0,0,0,0) 10%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0000000', endColorstr='#00000000',GradientType=0 )
+
+
+    &_bottom 
+        background: $color1
+        color: #eee 
+        font:
+            size: 16px
+
+    &_des 
+        padding-right: 20px
+
+        a 
+            display: inline-block 
+            font-style: italic
+
+    form.footer_form 
+        margin: 15px 0 0
+        label 
+            text-transform: uppercase
+            margin: 0 0 10px
+
+        button 
+            background: $color1
+            color: #fff
+            text-transform: uppercase
+            font:
+                weight: 600
+            border-radius: 0
+            border-color: $color1 
+
+        input 
+            border-color: $color1
+            border-radius: 0
+
+
+
+                
+           
+    &_link 
+        ul 
+            list-style: none
+            padding: 0
+            margin: 0
+
+            li 
+                padding: 0 0 5px
+                margin-bottom: 5px
+
+                a 
+                    font-weight: 600
+                    display: block 
+                    position: relative 
+                    padding-left: 15px
+
+                    &:before 
+                        content: "\f105"
+                        font:
+                            family: FontAwesome
+                            size: 10px
+                        +position(absolute, 2px null null 0)
+               
+
+    &_post 
+        ul 
+            list-style: none
+            padding: 0
+            margin: 0
+
+            li 
+                border-bottom: 1px solid #eee
+
+        h4 
+            font:
+                size: 12px
+                weight: 600
+            line-height: 1.5
+            position: relative 
+            padding-left: 15px
+
+            &:before 
+                content: "\f105"
+                font:
+                    family: FontAwesome
+                    size: 10px
+                +position(absolute, 2px null null 0)
+
+
+       
+
+
+
+        

@@ -1,0 +1,95 @@
+main.main
+    .breadcrumb-wrap 
+        .container
+            ol.breadcrumb
+                li: a(href="#") Home
+                li: a(href="#") Submit
+
+    .page.page-submit-post
+        .container 
+            .row
+                .col-sm-10.col-sm-offset-1
+                    .page-submit-post-main
+                        .page-submit-post-top 
+                            p <i class="fa fa-pencil" aria-hidden="true"></i> Draft your post
+                            button.btn-Pub Publish Now
+
+
+                        .page-submit-post-content
+                            .title-post.field
+                                .label-name
+                                   span Title
+                                .main-field
+                                    .form-group
+                                        <input type="text" class="form-control" placeholder="Title post or Title video" aria-describedby="basic-addon1">
+                            
+                            .upload-video.field
+                                .label-name 
+                                    span Upload video
+
+                                .main-field
+                                    .row 
+                                        .col-sm-5
+                                            .form-group
+                                                <input type="file" class="uploadfile" placeholder="Title post or Title video" id="uploadVideo">
+                                                label.label-input-file(for="uploadVideo")
+                                                    strong Select file
+                                                    span 
+                                                    
+                                        .col-sm-2
+                                            .text-center
+                                                b(style="margin-top: 5px; display: block") Or
+                                        .col-sm-5
+                                            .form-group
+                                                <input type="text" class="form-control" placeholder="Link url video" aria-describedby="basic-addon1">
+                            .upload-img.field
+                                .label-name 
+                                    span Upload image thumnail
+
+                                .main-field
+                                    .row 
+                                        .col-sm-5
+                                            .form-group
+                                                <input type="file" class="uploadfile" placeholder="Title post or Title video" id="uploadImg">
+                                                label.label-input-file(for="uploadImg")
+                                                    strong Select file
+                                                    span 
+
+                                        .col-sm-2
+                                            .text-center
+                                                b Or
+                                        .col-sm-5
+                                            .form-group
+                                                <input type="text" class="form-control" placeholder="Link url image" aria-describedby="basic-addon1">
+
+
+                            .field.content-field
+                                .label-name 
+                                    span Content post
+                                .main-field
+                                    .editable(data-placeholder="Write here ...")
+
+                            .field.footer-field
+                                .row 
+                                    .col-sm-3
+                                        .radio
+                                            <input type="radio" name="optionsRadios" id="news" checked> 
+                                            label(for="news") Bài viết
+                                        
+                                    .col-sm-3
+                                        .radio
+                                            <input type="radio" name="optionsRadios" id="video"> 
+                                            label(for="video") Video
+                                            
+                                    .col-sm-3
+                                        .radio
+                                            <input type="radio" name="optionsRadios" id="image">
+                                            label(for="image")  Hình ảnh
+                                            
+
+                                    .col-sm-3
+                                         button.btn-Pub.btn-block Publish Now
+
+                 
+                    
+                        

@@ -1,0 +1,308 @@
+// var
+$color1: #2f2f2f
+$color2: #d84340
+// setting
+* 
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+body 
+    font:
+        family: 'Open Sans', sans-serif
+    line-height: 1.5
+
+a 
+    color: #2f2f2f
+    &:hover 
+        text-decoration: none
+
+    &.btn-view-more 
+        display: inline-block
+        height: 40px
+        line-height: 40px
+        min-width: 150px
+        font:
+            size: 14px
+            weight: 700
+        letter-spacing: 1px
+        background: #fff
+        color: $color1
+        border-radius: 3px
+        border: 1px solid #eee
+        transition: all .2s ease-in-out
+
+        i 
+            margin-left: 10px
+
+        &:hover 
+            color: #fff
+            background: $color2
+            border-color: $color2
+
+.img 
+    img 
+        display: block 
+        width: 100%
+
+.breadcrumb-wrap 
+    background: #eee
+    padding: 15px 0
+    
+    .breadcrumb 
+        margin: 0
+        padding: 0
+        background: transparent
+        font:
+            size: 13px
+            weight: 600
+
+.pagination 
+    display: block
+    border-top: 1px solid #eee
+    text-align: center
+    padding: 30px 0
+
+    a, span 
+        display: inline-block
+        margin: 15px 8px 0
+        color: #949da7
+        font:
+            weight: 700
+    span 
+        color: $color1
+    .next, .prev
+        padding: 10px 30px
+        text-transform: uppercase
+        color: #fff
+        border-radius: 3px
+        margin: 15px 20px 0
+        background: $color2
+        letter-spacing: 1px
+
+
+.page 
+    padding: 50px 0
+
+    &-title 
+        text-align: center
+        padding-bottom: 30px
+
+        h3 
+            margin: 0
+            font:
+                size: 45px
+                weight: 700
+            text-transform: uppercase
+        
+        p 
+            max-width: 760px
+            margin: 20px auto 0
+            font:
+                size: 14px
+        &:after 
+            content: ""
+            display: block
+            margin: 40px auto 20px
+            +size(50px 5px)
+            background: $color1
+
+
+.section 
+    clear: both
+    padding: 70px 0
+
+    &_title 
+        text-align: center
+        margin: 0 0 50px
+        h3
+            margin: 0 0 10px
+            text:
+                transform: uppercase
+            font:
+                size: 30ppx
+                weight: 700
+        span 
+            display: block
+
+.mt-15 
+    margin-top: 15px
+.mt-30 
+    margin-top: 30px
+
+.galery-wrap
+    margin-left: -15px
+    margin-right: -15px
+    .galery-item
+        width: 25%
+        padding: 0 15px 30px
+        a 
+            
+            display: block 
+
+        img 
+            display: block 
+            width: 100%
+
+.video 
+    margin: 0 0 30px
+    .img 
+        img 
+            display: block
+            width: 100%
+
+    a   
+        display: block 
+        position: relative 
+
+        
+
+        &:after 
+            content: ""
+            display: block
+            +position(absolute, 0 0 0 0)
+            background: rgba(0,0,0,.5)
+            z-index: 1
+            opacity: .3
+            transition: all .15s ease-in-out
+        
+        .play 
+            display: block
+            +size(40px 40px)
+            +position(absolute, 50% null null 50%)
+            background: $color2
+            +margin(-20px null null -20px)
+            border-radius: 50%
+            line-height: 40px
+            text-align:center 
+            color: #fff
+            font-size: 12px
+            opacity: .5
+            transform: scale(.8)
+            z-index: 5
+            transition: all .3s ease-in-out
+
+            i 
+                transform: translateX(1px)
+
+        .title_video
+            font:
+                size: 14px
+                weight: 600
+            line-height: 1.5
+            +position(absolute, null 0 0 0)
+            color: #fff
+            margin: 0
+            padding: 15px 
+            z-index: 2
+            text-align: center
+
+        &:hover 
+            .play 
+                opacity: 1
+                transform: scale(1)
+            &:after 
+                opacity: 1
+
+.uploadfile
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+
+    + label 
+        border: 1px solid #eee
+        display: table
+        width: 100%
+        strong, span    
+            display: table-cell
+            padding: 7px 10px
+            font:
+                size: 12px
+                weight: 600
+        strong 
+            
+            background: $color2
+            text-align: center 
+            color: #fff
+            min-width: 80px
+        span 
+            min-width: 200px
+            min-height: 2em;
+            text-overflow: ellipsis
+            white-space: nowrap
+            overflow: hidden
+            vertical-align: top
+
+            
+
+button.btn-Pub
+    border: 1px solid #eee
+    background: #fff
+    padding: 7px 15px
+    border-radius: 3px
+    font:
+        size: 13px
+
+    &:hover 
+        background: $color2
+        border-color: $color2
+        color: #fff
+
+.radio 
+    input[type="radio"]:not(:checked), input[type="radio"]:checked 
+        position: absolute
+        left: -9999px
+        opacity: 0
+
+    label
+        position: relative
+        padding-left: 35px
+        cursor: pointer
+        display: inline-block
+        height: 25px
+        line-height: 25px
+        font:
+            weight: 600
+            size: 14px
+        transition: .28s ease
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+
+        &:before, &:after 
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            margin: 4px
+            width: 16px
+            height: 16px
+            z-index: 0
+            transition: .28s ease
+            border-radius: 100%
+        &:before
+            border: 2px solid #5a5a5a
+
+        &:after 
+            background: $color2
+            transform: scale(0)
+
+        &:hover 
+             &:before
+                box-shadow: 0px 0px 1px 5px rgba(0,0,0,.1)
+
+
+    input[type="radio"]:checked + label
+        &:before 
+             border-color: $color2
+        &:after 
+            transform: scale(.6)
+
+
+
+
+

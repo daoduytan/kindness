@@ -1,0 +1,58 @@
+header.header  
+    .header_top.hidden-xs
+        .container
+            ul.list-inline
+                li: a(href="") Login
+                li: a(href="") Signup
+
+    .header_main
+        .container
+            .header_main-wrap
+                .btn-nav.visible-sm.visible-xs
+                    span 
+                .logo 
+                    a(href="") 
+                        img(src="img/logo.png", alt="")
+                .header-right     
+                    .close-menu.visible-xs.visible-sm 
+                        span Close <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    nav.nav
+                        .search
+                            form 
+                                .input-group
+                                    span.input-group-btn
+                                        button.btn.hidden-xs.close-search: <i class="fa fa-times" aria-hidden="true"></i>
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    span.input-group-btn
+                                        <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        .menu
+                            ul.list-inline
+                                li: a(href="home.html") Home
+                                li: a(href="video.html") Video
+                                li: a(href="blog.html") Bài viết
+                                li: a(href="gallery.html") Hình ảnh
+                                li: a(href="") Traning
+                                li: a(href="") Về chúng tôi
+                                li: a(href="") Liên hệ
+                                 li.submit-post-btn
+                                    a(href="submit.html") Submit post
+
+                        .header-icon
+                            ul.list-inline
+                               
+                                li
+                                    a(href=""): <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                li 
+                                    a(href=""): <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                                li 
+                                    a(href=""): <i class="fa fa-envelope" aria-hidden="true"></i>
+                                li.btn-search.hidden-xs.hidden-sm
+                                    a(href=""): <i class="fa fa-search" aria-hidden="true"></i>
+                        .action-sm.visible-xs
+                            ul.list-inline
+                                li: a(href="") Login
+                                li: a(href="") Signup
+
+
+    // end header_main
+// end header

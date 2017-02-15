@@ -1,0 +1,106 @@
+.home_slider
+    .slick-slide 
+        position: relative 
+
+    .text
+        position: absolute
+        z-index: 10
+        bottom: 30%
+        width: 100%
+        text-align: center
+        color: #fff
+        opacity: 0
+        transform: translateY(30px)
+        transition: all 1s ease-in-out
+
+        h3 
+            font-size: 25px
+
+    .slick-active
+        .text
+            opacity: 1
+            transform: translateY(0)
+
+
+.home_blog  
+    &-slider 
+        margin-bottom: 50px
+        .slick-arrow
+            position: absolute
+            top: 50%
+            margin-top: -25px
+            z-index: 999
+            display: inline-block
+            +size(35px 50px)
+            background: $color2
+            color: #fff
+            text-align: center
+            line-height: 50px
+
+        .right 
+            right: 0 
+
+
+    &-item 
+        padding: 0
+    
+        .img 
+            position: relative
+            img
+                display: block 
+                width: 100%
+
+            &:after 
+                content: ""
+                margin-right: -23px
+                +size(0 0)
+                
+
+        &.odd 
+            .img 
+                 &:after 
+                    +position(absolute, null 50% 0 null)
+                    border: 23px solid transparent
+                    border-bottom: 16px solid #f7f7f7
+                    z-index: 999
+
+        &.even 
+            .img 
+                &:after
+                    +position(absolute, 0 50% null null)
+                    border: 23px solid transparent
+                    border-top: 16px solid #f7f7f7
+
+
+        .caption 
+            background: #f7f7f7
+            padding: 38px 20px
+            text:
+                align: center
+            span 
+                display: inline-block
+                font:
+                    size: 14px
+                    weight: 700
+                color: #c7b250
+                text:
+                    transform: uppercase
+                margin-bottom: 5px
+
+            .title_post 
+                margin: 0 0 10px
+                a
+                    font:
+                        size: 16px
+                        weight: 700
+                    line-height: 30px
+                    
+
+.home
+    &_video 
+        background: #F5F6F7
+        
+    &_galery
+        background: #F5F6F7
+
+
